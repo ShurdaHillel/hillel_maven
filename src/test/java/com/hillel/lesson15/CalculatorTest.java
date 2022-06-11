@@ -35,9 +35,9 @@ public class CalculatorTest {
         Assert.assertEquals(-2, actual);
     }
 
-    @Test
-    public void testCalculate() {
-        double actual = calculator.calculate(2, "+", 2);
-        Assert.assertEquals(4.0, actual, 0.0);
-    }
+//    @Test
+//    public void testCalculate() {
+//        double actual = calculator.calculate(2, "+", 2);
+//        Assert.assertEquals(4.0, actual, 0.0);
+//    }
 }

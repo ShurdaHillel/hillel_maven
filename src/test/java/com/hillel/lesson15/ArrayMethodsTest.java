@@ -34,4 +34,11 @@ public class ArrayMethodsTest {
         int actual = arrayMethods.searchElement(array, -5);
         Assert.assertEquals(0, actual);
     }
+
+    @Test
+    public void testSearchElementWhenArrayIsEmpty() {
+        int[] array = {};
+        int actual = arrayMethods.searchElement(array, -5);
+        Assert.assertEquals(-1, actual);
+    }
 }
