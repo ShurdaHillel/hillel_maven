@@ -33,4 +33,4 @@ jobs:
         path: target/site/jacoco/
 
     - name: Step 6 - List the current directory
-      run: cd target | ls -la
+      run: cd target && ls -la
