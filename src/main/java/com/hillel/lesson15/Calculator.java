@@ -2,12 +2,19 @@ package com.hillel.lesson15;
 
 public class Calculator {
 
-    public Double calculate(double a, String operation, double b){
+    public Double calculate(double a, String operation, double b) {
         return 0.0;
     }
 
     public int add(int a, int b) {
         return a + b;
+    }
+
+    public int div(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException();
+        }
+        return a / b;
     }
 
     public Integer add(Integer a, Integer b) {
