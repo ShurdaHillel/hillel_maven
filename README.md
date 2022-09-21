@@ -1,2 +1,2 @@
-[![Coverage](.github/badges/jacoco.svg)](https://github.com/ShurdaHillel/hillel_maven/blob/ci-git/.github/workflows/main.yml)
+![Coverage](.github/badges/jacoco.svg)
 ![Branches](.github/badges/branches.svg)
