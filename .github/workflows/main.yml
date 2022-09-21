@@ -40,11 +40,11 @@ jobs:
         path: target/site/jacoco/
 
     - name: Step 7 - Commit badge
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .github/badges/badge.svg
-        git commit -m "Add/Update badge"
+      uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: 'commit badge'
+          add: '*.svg'
 
     - name: Step 8 -  Push badge commit
       uses: ad-m/github-push-action@master
