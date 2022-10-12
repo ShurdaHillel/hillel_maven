@@ -1,15 +1,15 @@
 package com.hillel.lesson15;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
     Calculator calculator;
 
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         calculator = new Calculator();
     }
@@ -18,21 +18,21 @@ public class CalculatorTest {
     public void testAdd() {
         int actual = calculator.add(2, 2);
 
-        Assert.assertEquals(4, actual);
+        Assertions.assertEquals(4, actual);
     }
 
     @Test
     public void testAddWhenMembersAreNegative() {
         int actual = calculator.add(-2, -2);
 
-        Assert.assertEquals(-4, actual);
+        Assertions.assertEquals(-4, actual);
     }
 
     @Test
     public void testAddWhenOneMemberIsZero() {
         int actual = calculator.add(-2, 0);
 
-        Assert.assertEquals(-2, actual);
+        Assertions.assertEquals(-2, actual);
     }
 
 //    @Test
